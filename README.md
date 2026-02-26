@@ -80,39 +80,37 @@ Interactive Dashboard
 ## 📂 Project Structure
 
 
+## 📂 Project Structure
+
+```bash
 algorithmic-trading-strategy-backtester/
 │
-├── 📁 frontend/                      # React (Vite) Dashboard
-│   │
-│   ├── 📁 src/
+├── frontend/                     # React (Vite) Dashboard
+│   ├── src/
 │   │   ├── components/
-│   │   │   └── Dashboard.jsx         # Main dashboard UI
-│   │   │
-│   │   ├── App.jsx                   # Root React component
-│   │   ├── main.jsx                  # React entry point
-│   │   └── index.css                 # Global styles
-│   │
+│   │   │   └── Dashboard.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
 │   ├── package.json
 │   └── vite.config.js
 │
-├── 📁 backend/                       # FastAPI Backend
-│   │
-│   ├── main.py                       # FastAPI entry point
-│   │
-│   ├── 📁 core/
-│   │   ├── base.py                   # Strategy base class
-│   │   ├── engine.py                 # Core backtesting engine
-│   │   ├── broker.py                 # Trade execution simulator
-│   │   ├── portfolio.py              # Portfolio & capital logic
-│   │   ├── performance.py            # Performance metrics
-│   │   ├── manager.py                # Strategy manager
-│   │   └── loader.py                 # Historical data loader
-│   │
-│   ├── run_demo.py                   # Demo runner script
-│   └── requirements.txt              # Python dependencies
+├── backend/                      # FastAPI Backend
+│   ├── main.py
+│   ├── core/
+│   │   ├── base.py
+│   │   ├── engine.py
+│   │   ├── broker.py
+│   │   ├── portfolio.py
+│   │   ├── performance.py
+│   │   ├── manager.py
+│   │   └── loader.py
+│   ├── run_demo.py
+│   └── requirements.txt
 │
 ├── .gitignore
 └── README.md
+```
 ## 🛠️ Tech Stack
 
 ### 🔹 Backend
@@ -141,4 +139,5 @@ Passionate about building systematic trading engines, risk analytics tools, and 
 - Email: rrkafle2@gmail.com
 - **Vercel** – Frontend deployment
 - **Render** – Backend deployment
+
 
