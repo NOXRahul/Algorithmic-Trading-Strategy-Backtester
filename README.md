@@ -80,28 +80,37 @@ Interactive Dashboard
 ## 📂 Project Structure
 
 
-Algorithmic-Trading-Strategy-Backtester/
+algorithmic-trading-strategy-backtester/
 │
-├── frontend/                      # React (Vite) dashboard
-│   ├── src/
-│   │   ├── Dashboard.jsx          # Main dashboard UI
-│   │   ├── App.jsx                # Root component
-│   │   ├── main.jsx               # React entry point
-│   │   └── index.css              # Global styles
+├── 📁 frontend/                      # React (Vite) Dashboard
+│   │
+│   ├── 📁 src/
+│   │   ├── components/
+│   │   │   └── Dashboard.jsx         # Main dashboard UI
+│   │   │
+│   │   ├── App.jsx                   # Root React component
+│   │   ├── main.jsx                  # React entry point
+│   │   └── index.css                 # Global styles
+│   │
 │   ├── package.json
 │   └── vite.config.js
 │
-├── main.py                        # FastAPI entry point
-├── base.py                        # Strategy base class
-├── engine.py                      # Core backtesting engine
-├── broker.py                      # Trade execution simulator
-├── portfolio.py                   # Portfolio & capital logic
-├── performance.py                 # Performance metrics calculation
-├── loader.py                      # Historical data loader
-├── manager.py                     # Strategy manager
-├── run_demo.py                    # Demo runner script
+├── 📁 backend/                       # FastAPI Backend
+│   │
+│   ├── main.py                       # FastAPI entry point
+│   │
+│   ├── 📁 core/
+│   │   ├── base.py                   # Strategy base class
+│   │   ├── engine.py                 # Core backtesting engine
+│   │   ├── broker.py                 # Trade execution simulator
+│   │   ├── portfolio.py              # Portfolio & capital logic
+│   │   ├── performance.py            # Performance metrics
+│   │   ├── manager.py                # Strategy manager
+│   │   └── loader.py                 # Historical data loader
+│   │
+│   ├── run_demo.py                   # Demo runner script
+│   └── requirements.txt              # Python dependencies
 │
-├── requirements.txt               # Python dependencies
 ├── .gitignore
 └── README.md
 ## 🛠️ Tech Stack
@@ -132,3 +141,4 @@ Passionate about building systematic trading engines, risk analytics tools, and 
 - Email: rrkafle2@gmail.com
 - **Vercel** – Frontend deployment
 - **Render** – Backend deployment
+
